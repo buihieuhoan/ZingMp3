@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://static-zmp3.zmdcdn.me/skins/common/logo600.png" type="image/gif" sizes="16x16">
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <link rel="stylesheet" href="./assets/css/grid.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <title>My Music Player</title>
+</head>
+<body >
+  <div class="main grid row no-gutters">
+    <div class="nav col l-2 m-0">
+      <div class="nav__info-user">
+        <span class="nav__level-user">PRO</span>
+        <img src="./assets/image/user_info/avatar.jpg" alt="User avatar image" class="nav__info-user-img">
+        <h2 class="nav__info-user-name">Bui Hieu Hoan</h2>
+        <span class="nav__info-user-mail">buihieuhoan@gmail.com</span>
+      </div>
+      
+      <ul class="nav__list">
+        <li class="nav__list-item active">
+          <a href="" class="nav__list-item-link">
+            <i class="ri-home-5-line"></i>
+            Home
+          </a>
+        </li>
+
+        <li class="nav__list-item">
+          <a href="" class="nav__list-item-link">
+            <i class="ri-firefox-line"></i>
+            Browse
+          </a>
+        </li>
+
+        <li class="nav__list-item">
+          <a href="" class="nav__list-item-link">
+            <i class="ri-folder-5-line"></i>
+            Albums
+          </a>
+        </li>
+
+        <li class="nav__list-item">
+          <a href="" class="nav__list-item-link">
+            <i class="ri-user-2-line"></i>
+            Artists
+          </a>
+        </li>
+
+        <li class="nav__list-item">
+          <a href="" class="nav__list-item-link">
+            <i class="ri-video-line"></i>
+            Videos
+          </a>
+        </li>
+
+        <span>MY MUSIC</span>
+
+        <li class="nav__list-item">
+          <a href="" class="nav__list-item-link">
+            <i class="ri-history-line"></i>
+            Recently Played
+          </a>
+        </li>
+
+        <li class="nav__list-item">
+          <a href="" class="nav__list-item-link">
+            <i class="ri-heart-line"></i>
+            Favourite Songs
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container col l-10 m-12">
+      <!--Header-->
+
+      <!--Nav Mobile / Tablet-->
+      <input type="checkbox" hidden class="nav__input" name="" id="nav-input">
+      <label for="nav-input" class="nav__overlay"></label>
+      <div class="nav__mobile col l-2">
+        <label for="nav-input">
+          <i class="ri-menu-fold-line close__bar"></i>
+        </label>
+        <div class="nav__info-user">
+          <span class="nav__level-user">PRO</span>
+          <img src="./assets/image/user_info/avatar.jpg" alt="User Avt Img" class="nav__info-user-img">
+          <h2 class="nav__info-user-name low-opa">Bui Hieu Hoan</h2>
+          <span class="nav__info-user-mail low-opa">buihieuhoan@gmail.com</span>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__list-item">
+            <a href="#" class="nav__list-item-link low-opa low-opa active">
+              <i class="ri-home-5-line"></i>
+              Home
+            </a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#" class="nav__list-item-link low-opa">
+              <i class="ri-firefox-line"></i>
+              Browse
+            </a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#" class="nav__list-item-link low-opa">
+              <i class="ri-folder-5-line"></i>
+              Albums
+            </a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#" class="nav__list-item-link low-opa">
+              <i class="ri-user-2-line"></i>
+              Artists
+            </a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#" class="nav__list-item-link low-opa">
+              <i class="ri-video-line"></i>
+              Videos
+            </a>
+          </li>
+          <span>MY MUSIC</span>
+          <li class="nav__list-item">
+            <a href="#" class="nav__list-item-link low-opa">
+              <i class="ri-history-line"></i>
+              Recently Played
+            </a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#" class="nav__list-item-link low-opa">
+              <i class="ri-heart-line"></i>
+              Favourite Songs
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!--End Nav mobile / tablet-->
+      <div class="header col l-10 m-12">
+        <div class="header__search">
+          <label for="nav-input">
+            <i id="bar" class="ri-menu-unfold-line"></i>
+          </label>
+
+          <input type="search" class="header__search-input" placeholder="Search for songs, artists, etc...">
+        </div>
+
+        <div class="header__setting">
+          <i class="ri-notification-2-line header__setting-noti"></i>
+          <i class="ri-settings-3-line header__setting-set "></i>
+
+          <div class="header__upgrade">
+            <a href="">Upgrade Plan</a>
+          </div>
+        </div>
+      </div>
+
+      <!--Today Choice-->
+      <div class="choice-wrap">
+        <div class="choice__heading">
+          <h3>TODAY CHOICE</h3>
+
+          <div class="choice__heading-desc">
+            <span>20 albums</span>
+
+            <span>
+              <i class="ri-arrow-left-s-line"></i>
+              <i class="ri-arrow-right-s-line"></i>
+            </span>
+
+          </div>
+        </div>
+
+        <div class="choice__content">
+          <div class="choice__item">
+            <img src="./assets/image/choice_img/choice-1.jpg" alt="Choice 1 Img">
+          </div>
+          <div class="choice__item">
+            <img src="./assets/image/choice_img/choice-2.jpg" alt="Choice 2 Img">
+          </div>
+          <div class="choice__item">
+            <img src="./assets/image/choice_img/choice-3.jpg" alt="Choice 3 Img">
+          </div>
+          <div class="choice__item">
+            <img src="./assets/image/choice_img/choice-4.jpg" alt="Choice 4 Img">
+          </div>
+          <div class="choice__item">
+            <img src="./assets/image/choice_img/choice-5.jpg" alt="Choice 5 Img">
+          </div>
+          <div class="choice__item">
+            <img src="./assets/image/choice_img/choice-6.jpg" alt="Choice 6 Img">
+          </div>
+          <div class="choice__item">
+            <img src="./assets/image/choice_img/choice-7.jpg" alt="Choice 7 Img">
+          </div>
+        </div>
+      </div>
+
+      <!--Main area-->
+      <div class="main-area grid row no-gutters">
+        <div class="songs-list col l-7">
+          <!--JS show data here-->
+          <div class="main-area__heading">
+            <h3>Most Popular</h3>
+            <span>32 Songs (<a href="https://soundcloud.com">© SoundCloud</a>)</span>
+          </div>
+
+          <div class="songs-list__songs">
+
+            <div class="song">
+              <div class="song-info">
+                <div class="thumb" style="background-image: url('https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg')">
+                </div>
+                <span class="song-info__number">1</span>
+                <span class="song-info__author">Yan Nguyễn</span>
+                <span class="song-info__dash">-</span>
+                <span class="song-info__name">Chỉ bằng cái gật đầu</span>
+              </div>
+              <i class="ri-heart-fill love"></i>
+            </div>
+
+            
+          </div>
+        </div>
+          
+          <!--End JS show data here-->
+
+        <div class="song-player col l-4">
+          <div class="main-area__heading-disc">
+            <h3>Now Playing</h3>
+            <span>&nbsp;</span>
+          </div>
+          <div class="song-player__playing">
+            <div class="song-player__disc">
+              <div class="disc-wrap">
+                <div class="cd-thumb" style="background-image: url('https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg')">
+                </div>
+                <h3 class="disc-wrap__name"></h3>
+                <span class="disc-wrap__author"></span>
+                <div class="progress-area">
+                  <div class="progress-bar">
+                    <audio id="main-audio" src=""></audio>
+                  </div>
+                  <div class="song-timer">
+                    <span class="current">0:00</span>
+                    <span class="duration">0:00</span>
+                  </div>
+                </div>
+              </div>
+              <div class="song-action">
+                <span class="material-symbols-outlined repeat">repeat</span>
+                <i class="ri-rewind-fill back"></i>
+                <i class="ri-play-fill play"></i>
+                <i class="ri-pause-fill pause"></i>
+                <i class="ri-speed-fill next"></i>
+                <i class="ri-volume-down-line vol"></i>
+                <span class="volume-bar">
+                  <input class="volume-bar__range" type="range" min="0" max="100" value="25" onchange="setVolume()">
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+<script src="music_list.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
