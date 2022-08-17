@@ -13,7 +13,7 @@
 
 const main = document.querySelector('.main'),
     listSongWrap = main.querySelector('.songs-list__songs'),
-    songImg = main.querySelector('.cd-thumb'),
+    songImg = main.querySelector('.disc-wrap img'),
     songName = main.querySelector('.disc-wrap__name'),
     songAuthor = main.querySelector('.disc-wrap__author'),
     mainAudio = main.querySelector('#main-audio'),
@@ -95,7 +95,7 @@ function renderMusic() {
 function loadMusic(indexNum) {
     songName.innerText = allMusic[indexNum - 1].name
     songAuthor.innerText = allMusic[indexNum - 1].author
-    songImg.style.backgroundImage = `url('${allMusic[indexNum - 1].img}')`
+    songImg.src = `${allMusic[indexNum - 1].img}`
     // songImg.alt = `${allMusic[indexNum - 1].src}`
     mainAudio.src = `${allMusic[indexNum - 1].src}`
 }
